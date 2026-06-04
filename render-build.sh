@@ -3,14 +3,14 @@
 set -o errexit
 
 # Go to the frontend directory
-cd ../frontend
+cd frontend
 
 # Install dependencies and build
 npm install
 npm run build
 
-# Return to the backend directory
-cd "../Django project"
+# Return to the backend directory (root of the repo)
+cd ..
 
 # Install Python dependencies
 pip install -r requirements.txt
