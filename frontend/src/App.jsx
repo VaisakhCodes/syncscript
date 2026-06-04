@@ -19,7 +19,7 @@ function App() {
     setResponse('');
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/analyze/', {
+      const res = await fetch('/api/analyze/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
